@@ -5,6 +5,6 @@ export interface HealthResponse {
 }
 
 export const checkBackendHealth = async (): Promise<HealthResponse> => {
-  const response = await apiClient.get<HealthResponse>("/health");
+  const response = await apiClient.get<HealthResponse>("/api/v1/health");
   return response.data;
 };

@@ -1,0 +1,79 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Virtual environment
+.venv/
+venv/
+env/
+
+# Environment variables
+.env
+.env.*
+!.env.example
+
+# Jupyter
+.ipynb_checkpoints/
+
+# VS Code
+.vscode/
+*.code-workspace
+
+# Node
+node_modules/
+frontend/node_modules/
+frontend/dist/
+
+# Build
+dist/
+build/
+*.egg-info/
+
+# Logs
+*.log
+
+# Data - large geospatial files
+data/raw/*
+data/interim/*
+data/processed/*
+data/outputs/*
+
+# Keep folder structure
+!data/raw/**/
+!data/interim/**/
+!data/processed/**/
+!data/outputs/**/
+
+# Geospatial files
+*.tif
+*.tiff
+*.img
+*.jp2
+*.shp
+*.shx
+*.dbf
+*.prj
+*.cpg
+*.gpkg
+*.geojson
+
+# Large datasets
+*.csv
+*.parquet
+*.feather
+
+# Trained models
+models/trained/*
+models/metrics/*
+models/explainability/*
+
+# RAG local data
+rag/documents/raw/*
+rag/documents/processed/*
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini

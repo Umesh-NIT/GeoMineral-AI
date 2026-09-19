@@ -1,0 +1,16 @@
+services:
+  postgis:
+    image: postgis/postgis:17-3.5
+    container_name: geomineral-postgis
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: geomineral
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+    ports:
+      - "5432:5432"
+    volumes:
+      - geomineral_postgis_data:/var/lib/postgresql/data
+
+volumes:
+  geomineral_postgis_data:
